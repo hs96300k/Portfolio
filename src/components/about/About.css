@@ -1,0 +1,178 @@
+/* About Section */
+.about-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 20px;
+  color: #E1D1D1; /* Light Text from Color Palette */
+  min-height: 100vh;
+}
+
+.about-container {
+  display: flex;
+  max-width: 1200px;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.about-image {
+  position: relative;
+  margin-left: 80px;
+  max-width: 400px; /* Adjust this to control the image size */
+  overflow: hidden; /* Ensures no overflowing of image */
+  transition: transform 0.3s ease; /* Smooth zoom effect */
+}
+
+/* Vector Image */
+.about-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease; /* Transition for smooth zoom effect */
+}
+
+/* Wiggle Animation */
+@keyframes wiggle {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(10deg);
+  }
+  50% {
+    transform: rotate(-10deg);
+  }
+  75% {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+/* Apply wiggle effect only when hovering directly on the image */
+.about-image:hover img {
+  animation: wiggle 0.5s ease-in-out infinite; /* Apply wiggle animation */
+}
+
+/* Hover Effect on Image with Title Effect */
+.about-image:hover::after {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  font-size: 1.5rem;
+  color: #A78295; /* Accent color */
+  font-weight: bold;
+  transition: transform 0.3s ease;
+  transform: translateY(10px); /* Title sliding effect */
+}
+
+/* Content Area */
+.about-content {
+  flex: 1;
+  max-width: 600px; /* Adjust text area width */
+}
+
+.page-header {
+  font-size: 3rem; /* Default header size */
+  font-weight: bold;
+  color: #A78295; /* Accent color */
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+/* About Title */
+.about-title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #A78295; /* Applying accent color from the palette */
+}
+
+.about-description {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.skills-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.skills-list li {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+h2 {
+  margin-top: 30px;
+  font-size: 1.8rem;
+  color: #A78295; /* Accent Highlight for headings */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-image {
+    margin-left: 0; /* Remove margin on smaller screens */
+    margin-bottom: 20px; /* Add space below the image */
+  }
+
+  .about-image img {
+    max-width: 100%;
+    height: auto; /* Ensure the image is responsive */
+  }
+
+  .about-content {
+    max-width: 100%;
+    padding: 0 20px; /* Padding for better readability on smaller screens */
+  }
+
+  .page-header {
+    font-size: 2.2rem; /* Adjust header size for smaller screens */
+  }
+
+  .about-title {
+    font-size: 2.2rem; /* Adjust title size for better scaling */
+  }
+
+  .skills-list li {
+    font-size: 1.1rem; /* Smaller font size for mobile devices */
+  }
+
+  h2 {
+    font-size: 1.6rem; /* Adjust heading font size for smaller screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .about-section {
+    padding: 40px 15px; /* Reduce padding on mobile screens */
+  }
+
+  .page-header {
+    font-size: 1.8rem; /* Further reduce the header size on mobile */
+  }
+
+  .about-title {
+    font-size: 2rem; /* Smaller title font size */
+  }
+
+  .about-description {
+    font-size: 1rem; /* Adjust description font size */
+  }
+
+  .skills-list li {
+    font-size: 1rem; /* Adjust skills list font size */
+  }
+
+  h2 {
+    font-size: 1.4rem; /* Adjust heading size for mobile */
+  }
+}

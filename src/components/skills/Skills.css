@@ -1,0 +1,120 @@
+/* Skills Section Styling */
+.skills-section {
+  padding: 3rem 2rem;
+  text-align: center;
+  color: #E1D1D1; /* Light text */
+}
+
+/* Section Title */
+.section-title {
+  font-size: 2.5rem; /* Updated to match the About page header size */
+  font-weight: 700;
+  color: #A78295; /* Accent Highlight for the title */
+  margin-bottom: 2rem;
+}
+
+/* Skills Grid */
+.skills-grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Responsive layout */
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+/* Transparent Skill Card Styling */
+.skill-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.1); /* Transparent background */
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle border */
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+  transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+  width: 150px; /* Fixed width for uniform card sizes */
+  height: 150px; /* Fixed height for uniform card sizes */
+}
+
+.skill-card:hover {
+  transform: translateY(-10px); /* Hover effect */
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.5);
+  background: rgba(255, 255, 255, 0.2); /* Slightly brighter background on hover */
+  border: 1px solid rgba(255, 255, 255, 0.4); /* Emphasized border on hover */
+}
+
+/* Skill Icon */
+.skill-icon {
+  font-size: 3.5rem;
+  color: #A78295; /* Accent color for the icon */
+  margin-bottom: 0.5rem;
+}
+
+/* Skill Name */
+.skill-name {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #E1D1D1; /* Light text color for the name */
+  text-transform: uppercase;
+  margin: 0;
+  text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .skills-section {
+    padding: 2rem 1rem; /* Reduce padding on smaller screens */
+  }
+
+  .section-title {
+    font-size: 2.2rem; /* Adjust section title size */
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* More flexible grid layout */
+  }
+
+  .skill-card {
+    width: 120px; /* Adjust card size for smaller screens */
+    height: 120px;
+  }
+
+  .skill-icon {
+    font-size: 3rem; /* Adjust icon size for smaller screens */
+  }
+
+  .skill-name {
+    font-size: 0.9rem; /* Adjust skill name font size */
+  }
+}
+
+@media (max-width: 576px) {
+  .skills-section {
+    padding: 1.5rem 0.5rem; /* Further reduce padding on very small screens */
+  }
+
+  .section-title {
+    font-size: 1.8rem; /* Adjust section title size further */
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr)); /* Even more flexible grid for smaller screens */
+  }
+
+  .skill-card {
+    width: 100px; /* Further reduce card size */
+    height: 100px;
+  }
+
+  .skill-icon {
+    font-size: 2.5rem; /* Smaller icon size */
+  }
+
+  .skill-name {
+    font-size: 0.8rem; /* Adjust font size of skill name */
+  }
+}

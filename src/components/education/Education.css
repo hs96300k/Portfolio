@@ -1,0 +1,202 @@
+/* Section Styling */
+.education-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 2rem;
+  position: relative;
+  color: #e1d1d1; /* Light text for the section */
+}
+
+/* Heading */
+.education-heading {
+  font-size: 2.5rem; /* Matching size with About and Skills headers */
+  font-weight: bold;
+  color: #a78295; /* Accent color for the heading */
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+/* Container */
+.education-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem; /* Slight gap between image and cards */
+  flex-wrap: wrap; /* Added wrapping for smaller screens */
+  flex-direction: row-reverse; /* Swap the positions of the image and cards */
+  margin-left: auto; /* Adjusted to ensure the content aligns better */
+  margin-right: auto; /* Center the container */
+}
+
+/* Image Section */
+.education-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  transition: transform 0.3s ease; /* Added transition for smooth effect */
+  overflow: hidden; /* Ensure no overflow when wiggle happens */
+  max-width: 100%;
+}
+
+/* Vector Image */
+.vector-art {
+  max-width: 58%; /* Increased image size */
+  height: auto;
+  transition: transform 0.3s ease, animation 0.3s ease; /* Added transition for smooth effect */
+}
+
+/* Apply the wiggle effect on hover directly over the image */
+.education-image:hover .vector-art {
+  animation: wiggle 0.5s ease-in-out infinite;
+}
+
+/* Keyframes for smoother wiggle effect */
+@keyframes wiggle {
+  0% {
+    transform: rotate(0deg); /* Starting point - no rotation */
+  }
+  25% {
+    transform: rotate(3deg); /* Small rotation for smooth wiggle */
+  }
+  50% {
+    transform: rotate(0deg); /* Reset back to original */
+  }
+  75% {
+    transform: rotate(-3deg); /* Small opposite rotation for smooth wiggle */
+  }
+  100% {
+    transform: rotate(0deg); /* End back to no rotation */
+  }
+}
+
+/* Cards Section */
+.education-cards {
+  margin-right: 50px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center; /* Center the cards */
+}
+
+/* Card Styling */
+.education-card {
+  color: #e1d1d1; /* Light text color for the card */
+  background: rgba(
+    53,
+    29,
+    44,
+    0.85
+  ); /* Dark background with reduced opacity (similar to projects card) */
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3); /* Enhanced shadow for depth (like projects card) */
+  border-radius: 8px; /* Adjust border radius */
+  padding: 1.5rem;
+  transition: transform 0.3s, box-shadow 0.3s ease, opacity 0.3s ease;
+  opacity: 0.9; /* Slight opacity to create the effect */
+}
+
+.education-card:hover {
+  transform: translateY(
+    -10px
+  ); /* Similar hover effect for lift (like projects card) */
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4); /* Darker shadow on hover (like projects card) */
+  opacity: 1; /* Full opacity on hover */
+}
+
+/* Card Title and Content */
+.education-card h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #a78295; /* Accent color for the card title */
+  margin-bottom: 0.5rem;
+}
+
+.education-card h4 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #e1d1d1; /* Light text color for subheadings */
+}
+
+.education-card p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #e1d1d1; /* Light text color for paragraphs */
+}
+
+/* Top and Bottom Cards Styling */
+.top-card {
+  margin-top: 0;
+}
+
+.bottom-card {
+  margin-bottom: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .education-heading {
+    font-size: 2.2rem; /* Adjust heading size for smaller screens */
+    margin-bottom: 2rem;
+  }
+
+  .education-container {
+    flex-direction: column;
+    gap: 2rem; /* More space between the image and cards */
+    margin-left: 0; /* Remove the left margin */
+    margin-right: 0; /* Remove the right margin */
+  }
+
+  .education-image {
+    max-width: 100%; /* Adjust image size */
+    margin-bottom: 2rem; /* Added margin to separate image from cards */
+  }
+
+  .education-cards {
+    margin-right: 0;
+    width: 100%; /* Make the cards take full width on smaller screens */
+    padding: 0 10px; /* Added padding to ensure no content is too close to the edges */
+  }
+
+  .education-card {
+    padding: 1rem; /* Reduce padding for smaller screens */
+  }
+
+  .education-card h3 {
+    font-size: 1.2rem; /* Adjust title size */
+  }
+
+  .education-card h4 {
+    font-size: 1rem; /* Adjust subtitle size */
+  }
+
+  .education-card p {
+    font-size: 0.9rem; /* Adjust paragraph font size */
+  }
+}
+
+@media (max-width: 576px) {
+  .education-heading {
+    font-size: 1.8rem; /* Smaller heading for very small screens */
+  }
+
+  .education-container {
+    gap: 1rem; /* Reduce gap for tighter layout */
+  }
+
+  .education-card {
+    padding: 0.8rem; /* Reduce padding for cards on very small screens */
+  }
+
+  .education-card h3 {
+    font-size: 1rem; /* Adjust card title font size */
+  }
+
+  .education-card h4 {
+    font-size: 0.9rem; /* Adjust card subtitle font size */
+  }
+
+  .education-card p {
+    font-size: 0.8rem; /* Adjust paragraph font size */
+  }
+}

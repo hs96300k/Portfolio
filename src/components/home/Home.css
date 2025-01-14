@@ -1,0 +1,169 @@
+/* General Section Styling */
+.home-section {
+  display: flex;
+  justify-content: flex-start; /* Align content to the left */
+  align-items: center; /* Vertically center the content */
+  text-align: left; /* Align text to the left */
+  min-height: 100vh;
+  padding: 0.5rem;
+  color: #efe1d1; /* Light text */
+}
+
+.home-container {
+  max-width: 800px;
+  width: 100%;
+  margin-top: 45px;
+  margin-left: 10%; /* Shift the content to the left */
+}
+
+/* Heading and Subtitles */
+.home-heading {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #efe1d1; /* Light text for headings */
+  text-align: left;
+}
+
+.home-name {
+  font-size: 3rem;
+  color: #a78295; /* Accent color for name emphasis */
+  font-weight: 800;
+}
+
+.home-subtitle {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #efe1d1;
+  text-align: left;
+}
+
+/* Description */
+.home-description {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  color: #efe1d1;
+  text-align: left;
+}
+
+/* Social Media Icons */
+.home-icons {
+  display: flex;
+  justify-content: flex-start;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.home-icon {
+  font-size: 1.5rem;
+  color: #a78295;
+  transition: color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.home-icon:hover {
+  color: #3f2e3e;
+  transform: scale(1.2);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Add subtle shadow on hover */
+}
+
+/* Buttons */
+.home-buttons .btn {
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 25px;
+  text-decoration: none;
+  cursor: pointer;
+  background-color: #a78295;
+  color: #331d2c;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #3f2e3e;
+  color: #efe1d1;
+  transform: translateY(-3px);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .home-section {
+    padding: 5rem 2rem;
+  }
+
+  .home-container {
+    margin-left: 10%;
+  }
+
+  .home-heading {
+    font-size: 2rem;
+  }
+
+  .home-name {
+    font-size: 2.5rem;
+  }
+
+  .home-subtitle {
+    font-size: 1.5rem;
+  }
+
+  .home-description {
+    font-size: 1rem;
+  }
+
+  .home-icons {
+    gap: 1rem;
+  }
+
+  .home-icon {
+    font-size: 1.2rem;
+  }
+
+  .home-buttons .btn {
+    padding: 0.6rem 1.5rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .home-section {
+    padding: 3rem 1rem;
+  }
+
+  .home-container {
+    margin-left: 10%;
+  }
+
+  .home-heading {
+    font-size: 1.8rem;
+  }
+
+  .home-name {
+    font-size: 2rem;
+  }
+
+  .home-subtitle {
+    font-size: 1.2rem;
+  }
+
+  .home-description {
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+
+  .home-icons {
+    gap: 0.8rem;
+  }
+
+  .home-icon {
+    font-size: 1rem;
+  }
+
+  .home-buttons .btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+  }
+}

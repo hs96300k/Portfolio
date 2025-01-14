@@ -1,0 +1,78 @@
+/* Contact Section */
+.contact {
+  color: #E1D1D1; /* Light text color */
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+/* Contact Header */
+.contact-header {
+  font-size: 2.5rem; /* Adjusted to match the size of other page headers */
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #A78295; /* Accent color for the header */
+}
+
+/* Contact Main Section */
+.contact-main {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Social Icons Section */
+.social-icons {
+  display: flex;
+  gap: 80px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Social Icon Styling */
+.social-icon {
+  font-size: 3.1rem;
+  color: #E1D1D1; /* Light text color */
+  text-decoration: none;
+  transition: color 0.4s, transform 0.2s;
+}
+
+.social-icon:hover {
+  color: #A78295; /* Accent color on hover */
+  transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+.social-icon:focus {
+  outline: none; /* Removes the default focus outline */
+}
+
+/* Contact Footer */
+.contact-footer {
+  font-size: 15px;
+  margin-top: 15px;
+  color: #E1D1D1; /* Light text color */
+}
+
+/* Responsive Design for Mobile */
+@media screen and (max-width: 768px) {
+  .social-icons {
+    gap: 20px; /* Reduce gap between icons */
+  }
+
+  .contact-header {
+    font-size: 2rem; /* Scaled down for smaller screens */
+  }
+
+  .social-icon {
+    font-size: 2.5rem; /* Reduce icon size for mobile */
+  }
+  
+  .contact-main {
+    padding: 15px; /* Reduce padding */
+  }
+  
+  .contact-footer {
+    font-size: 14px; /* Slightly smaller font size for footer */
+  }
+}

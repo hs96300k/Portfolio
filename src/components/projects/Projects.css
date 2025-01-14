@@ -1,0 +1,164 @@
+/* Projects Container */
+.projects-container {
+  text-align: center;
+  padding: 50px 20px;
+  color: #e1d1d1; /* Light text color for the section */
+}
+
+/* Projects Heading */
+.projects-heading {
+  font-size: 3rem; /* Updated to match the consistent size of other page headers */
+  font-weight: bold;
+  color: #a78295; /* Accent color for the heading */
+  margin-bottom: 30px;
+}
+
+/* Projects Grid */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(280px, 1fr)
+  ); /* Increased width of cards */
+  gap: 40px;
+  justify-items: center;
+  padding: 0 20px;
+}
+
+/* Project Card */
+.project-card {
+  width: 320px; /* Increased width for cards */
+  height: auto;
+  background: rgba(53, 29, 44, 0.85); /* Dark background with reduced opacity */
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3); /* Enhanced shadow for depth */
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 15px;
+  margin: 20px;
+  position: relative; /* To keep the "Go Live" button at the bottom */
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4); /* Darker shadow on hover */
+}
+
+/* Image Container */
+.image-container {
+  position: relative;
+  width: 100%;
+  height: 160px;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+/* Project Image */
+.project-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.image-container:hover .project-image {
+  transform: scale(1.05); /* Slight zoom on hover */
+}
+
+/* Image Slider Buttons */
+.image-slider-buttons {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+  pointer-events: all; /* Ensure the buttons are clickable */
+}
+
+/* Updated Slider Button */
+.slider-button {
+  background: transparent; /* Remove background */
+  color: #fff;
+  border: none;
+  padding: 12px;
+  font-size: 30px; /* Make the arrows larger */
+  font-weight: bold; /* Increase font weight */
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.slider-button:hover {
+  transform: scale(1.2); /* Slight scaling on hover */
+  color: #a78295; /* Accent color on hover */
+}
+
+/* Project Name */
+.project-name {
+  font-size: 1.1rem;
+  margin: 15px 20px;
+  color: #e1d1d1; /* Light text color */
+}
+
+/* Project Description */
+.project-description {
+  font-size: 0.85rem;
+  color: #e1d1d1; /* Light text color */
+  margin: 10px 20px;
+  text-align: justify;
+  flex-grow: 1; /* To make the description area flexible */
+}
+
+/* Live Button */
+.live-button {
+  position: relative;
+  bottom: 15px; /* Consistent position at the bottom of the card */
+  left: 35%;
+  margin-top: 20px;
+  padding: 8px 16px;
+  background: #a78295; /* Accent color for the button */
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 0.95rem;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.live-button:hover {
+  background: #8c6d7f; /* Darker accent color on hover */
+  transform: scale(1.05); /* Slight scaling on hover */
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 768px) {
+  .projects-grid {
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(260px, 1fr)
+    ); /* Adjust card width for smaller screens */
+    gap: 20px; /* Reduce gap between cards */
+  }
+
+  .project-card {
+    width: 100%; /* Make the cards take full width on mobile */
+    padding: 10px; /* Reduce padding */
+  }
+
+  .project-name {
+    font-size: 1rem; /* Reduce font size for mobile */
+  }
+
+  .project-description {
+    font-size: 0.9rem; /* Reduce description font size */
+  }
+
+  .live-button {
+    font-size: 0.85rem; /* Smaller font size for the button */
+    left: 50%; /* Center the button */
+    transform: translateX(-50%);
+  }
+}

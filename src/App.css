@@ -1,0 +1,19 @@
+#particles {
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  min-height: 100vh; /* Ensures it covers the full viewport height */
+}
+
+#particles canvas {
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+html {
+  scroll-behavior: smooth;
+  height: 100%; /* Ensure full height for smooth scrolling */
+}

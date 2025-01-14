@@ -1,0 +1,24 @@
+/* Footer Section */
+.footer {
+  width: 100%;
+  position: relative;
+  bottom: 0;
+  padding: 20px 0; /* Add padding to the top and bottom of the footer */
+  margin-top: 20px; /* Space between the footer and the content above */
+  text-align: center;
+  color: #E1D1D1; /* Light text color */
+}
+
+/* Footer Footer Text */
+.footer-footer {
+  font-size: 1rem;
+  margin-top: 15px;
+  color: #A78295; /* Accent color for footer text */
+}
+
+/* Responsive Design for Mobile */
+@media screen and (max-width: 768px) {
+  .footer-footer {
+    font-size: 14px; /* Smaller text size on mobile */
+  }
+}
