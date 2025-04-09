@@ -46,7 +46,7 @@ const Home = () => {
         {/* Social Media Icons */}
         <div className="home-icons">
           <a
-            href="www.linkedin.com/in/hashirsajid"
+            href="https://www.linkedin.com/in/hashirsajid/"
             target="_blank"
             rel="noopener noreferrer"
             className="home-icon"
