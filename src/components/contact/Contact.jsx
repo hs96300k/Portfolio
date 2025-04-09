@@ -8,7 +8,7 @@ const Contact = () => {
       <section className="contact-main">
         <div className="social-icons">
           <a
-            href="www.linkedin.com/in/hashirsajid"
+            href="https://www.linkedin.com/in/hashirsajid/"
             target="_blank"
             rel="noopener noreferrer"
             className="social-icon"
