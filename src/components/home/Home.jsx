@@ -46,7 +46,7 @@ const Home = () => {
         {/* Social Media Icons */}
         <div className="home-icons">
           <a
-            href="https://www.linkedin.com/in/hs55552k"
+            href="www.linkedin.com/in/hashirsajid"
             target="_blank"
             rel="noopener noreferrer"
             className="home-icon"
@@ -60,7 +60,7 @@ const Home = () => {
             <i className="fas fa-briefcase"></i>
           </a>
           <a
-            href="https://github.com/hs55552k"
+            href="https://github.com/hs96300k"
             target="_blank"
             rel="noopener noreferrer"
             className="home-icon"
@@ -80,7 +80,7 @@ const Home = () => {
         {/* Call to Action Button */}
         <div className="home-buttons">
           <a
-            href="https://drive.google.com/file/d/1x3LmRNJ5KL4PDZk0XRd3Xc9CLPPWxLax/view?usp=drive_link"
+            href="https://drive.google.com/file/d/1gLytgMYN3n14BFxPn31SbGjpwJVJr47d/view?usp=drive_link"
             target="_blank"
             className="btn btn-primary"
           >

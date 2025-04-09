@@ -8,7 +8,7 @@ const Contact = () => {
       <section className="contact-main">
         <div className="social-icons">
           <a
-            href="https://www.linkedin.com/in/hs55552k"
+            href="www.linkedin.com/in/hashirsajid"
             target="_blank"
             rel="noopener noreferrer"
             className="social-icon"
@@ -24,7 +24,7 @@ const Contact = () => {
             <i className="fas fa-briefcase"></i>
           </a>
           <a
-            href="https://github.com/hs55552k"
+            href="https://github.com/hs96300k"
             target="_blank"
             rel="noopener noreferrer"
             className="social-icon"
